@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function Mahasiswa(nama, kelas, alamat){
+
+      let mhs = {};
+      mhs.nama = nama;
+      mhs.kelas = kelas;
+      mhs.alamat = alamat;
+      return mhs;
+    }
+
+    var mhs1 = Mahasiswa('Agung Iswanto', '3D', 'Kramat');
+    console.log(mhs1)
+    var maha ={};
+    maha.nama = 'Agung Iswanto';
+    maha.kelas = '3D';
+    maha.alamat = 'Kramat';
+    console.log(maha)
+
+
+    function objectMhs(nama, kelas, alamat, hobby){
+
+      let mhssw = {};
+      mhssw.nama = nama;
+      mhssw.kelas = kelas;
+      mhssw.alamat = alamat;
+      mhssw.hobby = hobby;
+      return mhssw;
+    }
+    
+
+    siswa = objectMhs('Agung Iswanto');
+    siswa.kelas = ('3D');
+    siswa.alamat = ('Kramat');
+    siswa.hobby = ('Hiking');
+    console.log(siswa)
+    var newObj = {...maha, ...siswa};
+    console.log(newObj)
+
+  </script>
+</body>
+</html>
